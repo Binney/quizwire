@@ -12,16 +12,21 @@
             <h1>QuizWire: Like ordinary trivia, but with an I</h1>
             <div id="quiz">
                 <p id="question">Quiz loading...</p>
-                <ul id="answers">
-                    <li><span id="option0" class="not-selected"></span></li>
-                    <li><span id="option1" class="not-selected"></span></li>
-                    <li><span id="option2" class="not-selected"></span></li>
-                    <li><span id="option3" class="not-selected"></span></li>
-                </ul>
-                <p id="checkAnswer">Check answer</p>
-                <p id="nextQuestion">Next question</p>
-                <p id="scorecard">?</p>
-
+                <ol id="answers">
+                    <li><span id="option0" class="clickable not-selected"></span></li>
+                    <li><span id="option1" class="clickable not-selected"></span></li>
+                    <li><span id="option2" class="clickable not-selected"></span></li>
+                    <li><span id="option3" class="clickable not-selected"></span></li>
+                </ol>
+                <div class="check">
+                    <p id="checkAnswer" class="clickable">Check answer</p>
+                </div>
+                <div class="next">
+                    <p id="nextQuestion" class="clickable">Next question ></p>
+                </div>
+                <div class="score">
+                    <p id="scorecard">?</p>
+                </div>
             </div>
         </div>
     </body>

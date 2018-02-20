@@ -11,6 +11,23 @@ h1 {
     text-align:center;
 }
 
+.app {
+    width: 70%;
+    max-width: 900px;
+    margin: auto;
+    position: relative;
+    padding-top: 50px;
+}
+
+#answers li .clickable {
+    line-height: 200%;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding: 5px;
+}
+
 li .not-selected {
     color: yellow;
 }
@@ -21,4 +38,29 @@ li .selected {
 
 li .correct {
     color: lightgreen;
+}
+
+.check, .next, .score {
+    font-size: 200%;
+    border: 2px solid lightgrey;
+    border-radius: 15px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.check {
+    left: 0;
+}
+
+.next {
+    right: 50%;
+}
+
+.score {
+    right: 0;
+}
+
+#checkAnswer, #nextQuestion, #scorecard {
+    padding: 10px;
+    margin: 0;
 }
