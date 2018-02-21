@@ -1,66 +1,48 @@
-h1, h2, h3, p, a {
-	color: lightgrey;
+h1, h2, h3, p, a, li {
+    font-family: sans-serif;
 }
 
-h1 {
-    font-size:24px;
-    font-weight:normal;
-    margin:0px;
-    overflow:visible;
-    padding:0px;
-    text-align:center;
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background: radial-gradient(#f0888d, #0b65c1, #052240);
 }
 
 .app {
-    width: 70%;
-    max-width: 900px;
+    width: 50%;
+    max-width: 800px;
     margin: auto;
-    position: relative;
+    padding-left: 50px;
+    padding-right: 50px;
+    background: rgba(255,255,255,0.3);
+    min-height: 100%;
+}
+
+h1 {
+    margin-top: 0;
     padding-top: 50px;
 }
 
-#answers li .clickable {
-    line-height: 200%;
+li, p.clickable {
     cursor: pointer;
-    user-select: none;
-    border: 1px solid lightgrey;
-    border-radius: 5px;
-    padding: 5px;
 }
 
 li .not-selected {
-    color: yellow;
+    
 }
 
 li .selected {
-    color: orange;
+    text-decoration: underline;
+    color: darkorange;
 }
 
 li .correct {
-    color: lightgreen;
+    color: springgreen;
 }
 
-.check, .next, .score {
-    font-size: 200%;
-    border: 2px solid lightgrey;
-    border-radius: 15px;
-    position: absolute;
-    cursor: pointer;
-}
-
-.check {
-    left: 0;
-}
-
-.next {
-    right: 50%;
-}
-
-.score {
-    right: 0;
-}
-
-#checkAnswer, #nextQuestion, #scorecard {
-    padding: 10px;
-    margin: 0;
+li .incorrect {
+    color: crimson;
 }

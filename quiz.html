@@ -1,32 +1,27 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/quiz.css">
         <title>QuizWire</title>
         <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>        
         <script type="text/javascript" src="js/quiz.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
     </head>
     <body>
         <div class="app">
             <h1>QuizWire: Like ordinary trivia, but with an I</h1>
             <div id="quiz">
                 <p id="question">Quiz loading...</p>
-                <ol id="answers">
-                    <li><span id="option0" class="clickable not-selected"></span></li>
-                    <li><span id="option1" class="clickable not-selected"></span></li>
-                    <li><span id="option2" class="clickable not-selected"></span></li>
-                    <li><span id="option3" class="clickable not-selected"></span></li>
-                </ol>
-                <div class="check">
-                    <p id="checkAnswer" class="clickable">Check answer</p>
-                </div>
-                <div class="next">
-                    <p id="nextQuestion" class="clickable">Next question ></p>
-                </div>
-                <div class="score">
-                    <p id="scorecard">?</p>
-                </div>
+                <ul id="answers">
+                    <li><span id="option0"></span></li>
+                    <li><span id="option1"></span></li>
+                    <li><span id="option2"></span></li>
+                    <li><span id="option3"></span></li>
+                </ul>
+                <p id="checkAnswer" class="clickable">Check answer</p>
+                <p id="nextQuestion" class="clickable">Next question</p>
+                <p id="scorecard">0/10</p>
+
             </div>
         </div>
     </body>
